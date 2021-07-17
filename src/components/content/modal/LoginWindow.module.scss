@@ -17,13 +17,13 @@
   }
 
   input{
-    width: 15vw;
+    width: 280px;
   }
 
   button{
     color: $bgColor;
     background-color: $buttonColor;
-    padding: 0.5vh 2vw;
+    padding: 5px 30px;
     margin-top: 15vh;
 
     &:hover{
