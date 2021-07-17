@@ -1,0 +1,67 @@
+@import "src/assets/scss/mixins";
+
+@media screen and (max-width: 480px) {
+  .item{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+
+  .item{
+    width: 280px;
+  }
+}
+
+.newItems{
+  margin-top: 4vh;
+}
+
+.header{
+  font-weight: bold;
+  font-size: 24px;
+  text-align: left;
+}
+
+.items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 20px;
+  width: 280px;
+  cursor: pointer;
+  img{
+    border-radius: 5px;
+  }
+
+  .description{
+    display: none;
+  }
+
+  :hover{
+    .description{
+      position: absolute;
+      display: block;
+      background-color: black;
+      opacity: 0.6;
+      color: white;
+      font-weight: normal;
+      font-size: 16px;
+      width: 260px;
+      height: 380px;
+      overflow: hidden;
+      padding: 10px 10px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.name{
+  font-weight: 500;
+}

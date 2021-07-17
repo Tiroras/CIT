@@ -1,0 +1,44 @@
+@import "src/assets/scss/variables";
+@import "src/assets/scss/mixins";
+
+@media screen and (max-width: 480px) {
+  .genre{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .genre{
+    width: 280px;
+  }
+}
+
+.header{
+  @include header;
+  text-align: left;
+  margin-top: 3vh;
+}
+
+.genres{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.genre{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  height: 200px;
+  margin: 1vh 0;
+  font-weight: 500;
+  font-size: 18px;
+  color: $bgColor;
+  cursor: pointer;
+
+
+  img{
+    width: 60px;
+  }
+}

@@ -1,0 +1,22 @@
+@import "src/assets/scss/variables";
+
+.footer{
+  background-color: $footerBGColor;
+  padding: 3vh 8vw;
+  z-index: 20;
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  text-align: left;
+}
+
+.link{
+  color:blue;
+  font-weight: bold;
+}

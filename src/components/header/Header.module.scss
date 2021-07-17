@@ -1,0 +1,28 @@
+@import "src/assets/scss/variables";
+
+@media screen and (max-width: 800px) {
+  .header{
+    flex-direction: column;
+
+    div{
+      margin-top: 1vh;
+    }
+  }
+}
+
+.headline{
+  font-size: $headerSize;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  img{
+    margin-right: 1vw;
+  }
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 8vw;
+}

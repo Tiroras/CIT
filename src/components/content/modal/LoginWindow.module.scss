@@ -1,0 +1,43 @@
+@import "src/assets/scss/variables";
+@import "src/assets/scss/mixins";
+
+
+.login{
+  background-color: $bgColor;
+  border-radius: 15px;
+  width: 280px;
+  height: 400px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20vh;
+  padding: 4vh;
+
+  .field{
+    margin-top: 2vh;
+  }
+
+  input{
+    width: 15vw;
+  }
+
+  button{
+    color: $bgColor;
+    background-color: $buttonColor;
+    padding: 0.5vh 2vw;
+    margin-top: 15vh;
+
+    &:hover{
+      background-color: $selectedBTNColor;
+    }
+  }
+
+  .checkbox{
+    text-align: left;
+    margin-top: 3vh;
+  }
+}
+
+.header{
+  @include header;
+}
+

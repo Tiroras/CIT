@@ -1,0 +1,18 @@
+@import "src/assets/scss/variables";
+@import "src/assets/scss/mixins";
+
+.tabs{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3vh;
+}
+
+.tab{
+  @include tab
+}
+
+.active{
+  @include tab;
+  color: $buttonColor;
+  text-decoration: underline;
+}

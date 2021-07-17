@@ -1,0 +1,26 @@
+@import "./variables";
+
+
+@mixin tab{
+  cursor: pointer;
+  margin: 0 2vw;
+  font-weight: bold;
+  font-size: $headerSize;
+}
+
+@mixin header{
+  font-size: $headerSize;
+  font-weight: bold;
+}
+
+@mixin grid($cols, $height,){
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  height: $height;
+  width: ((100% - (($cols - 1) * 3%)) / $cols);
+
+  &:nth-child(#{$cols}n){
+    margin-right: 0;
+  }
+}

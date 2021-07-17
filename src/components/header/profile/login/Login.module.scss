@@ -1,0 +1,28 @@
+@import "src/assets/scss/variables";
+
+
+@media screen and (max-width: 800px) {
+  .login{
+    padding: 1vh 10vw;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .login{
+    padding: 1vh 2vw;
+  }
+}
+
+.login{
+  border: none;
+  border-radius: 3px;
+  background-color: $buttonColor;
+  color: $bgColor;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:hover{
+    background-color: $selectedBTNColor;
+  }
+}

@@ -1,0 +1,27 @@
+.comedy{
+  background: linear-gradient(to top left, #FFD200, #FFA400);
+  &:hover{
+    background: linear-gradient(to top left, darken(#FFD200, 5%), darken(#FFA400, 5%));
+  }
+}
+
+.drama{
+  background: linear-gradient(to top left, #FFBA00, #FF6A00);
+  &:hover{
+    background: linear-gradient(to top left, darken(#FFBA00, 5%), darken(#FF6A00, 5%));
+  }
+}
+
+.fantasy{
+  background: linear-gradient(to top left, #3D9AD1, #0D58A6);
+  &:hover{
+    background: linear-gradient(to top left, darken(#3D9AD1, 5%), darken(#0D58A6, 5%));
+  }
+}
+
+.horrors{
+  background: linear-gradient(to top left, #616161, #212121);
+  &:hover{
+    background: linear-gradient(to top left, darken(#616161, 5%), darken(#212121, 5%));
+  }
+}
